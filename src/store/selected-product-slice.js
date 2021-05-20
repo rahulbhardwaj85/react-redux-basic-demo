@@ -46,7 +46,7 @@ const selectedProductSlice = createSlice({
                     state.totalAmount = state.totalAmount - action.payload.price
                 } else {
     
-                    state.selectedProduct.splice(itemIndex);
+                    state.selectedProduct.splice(itemIndex,1);
                     state.totalAmount = state.totalAmount - action.payload.price
                 }
         },
