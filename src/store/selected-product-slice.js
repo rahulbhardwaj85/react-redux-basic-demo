@@ -14,6 +14,7 @@ const selectedProductSlice = createSlice({
 
             const itemIndex = state.selectedProduct.map(e => e.id).indexOf(action.payload.id);
             const updateItem = state.selectedProduct[itemIndex];
+      //also use this=  const updateItem = state.selectedProduct.find(item=> item.id === action.payload.id);
             if (updateItem) {
 
                 const updated_Item = {
